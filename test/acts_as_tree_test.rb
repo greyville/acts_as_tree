@@ -19,7 +19,7 @@ class Test::Unit::TestCase
   end
 end
 
-ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :dbfile => ":memory:")
+ActiveRecord::Base.establish_connection(:database => "acts_as_tree", :adapter => "sqlite3", :dbfile => ":memory:")
 
 # AR keeps printing annoying schema statements
 $stdout = StringIO.new
